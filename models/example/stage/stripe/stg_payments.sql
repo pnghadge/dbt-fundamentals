@@ -16,4 +16,4 @@ from raw.stripe.payment
 )
 
 
-
+select * from payment
