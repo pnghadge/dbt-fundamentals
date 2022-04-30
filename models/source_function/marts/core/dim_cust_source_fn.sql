@@ -5,13 +5,13 @@
 
 with customers as (
 
-    select * from {{ref('stg_customer')}}
+    select * from {{ref('stg_cust_source_fn')}}
 
 ),
 
 orders as (
 
-    select * from {{ref('fct_orders')}}
+    select * from {{ref('stg_order_source_fn')}}
 
 ),
 
