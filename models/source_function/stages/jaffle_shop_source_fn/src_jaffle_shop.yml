@@ -1,12 +1,12 @@
 version: 2
 
-source:
+sources:
   - name: jaffle_shop
     database: raw
     schema: jaffle_shop
     tables:
-    - name: customers
-    - name: orders
+      - name: customers
+      - name: orders
 
 
 
