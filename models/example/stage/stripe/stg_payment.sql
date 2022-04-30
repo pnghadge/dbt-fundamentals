@@ -1,16 +1,17 @@
 
 with payment as
 (
-select 
-ID	as payment_id,
-ORDERID	order_id,
-PAYMENTMETHOD	pay_method,
-STATUS	,
-AMOUNT	,
-CREATED	,
-_BATCHED_AT
+select
+    id as payment_id,
+    orderid as order_id,
+    paymentmethod as payment_method,
+    status,
 
-from RAW.STRIPE.PAYMENT
+    -- amount is stored in cents, convert it to dollars
+    amount / 100 as amount,
+    created as created_at
+
+from raw.stripe.payment 
     
 )
 
