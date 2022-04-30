@@ -13,6 +13,7 @@ orders as (
 
     select * from {{ref('stg_order_source_fn')}}
 
+
 ),
 
 customer_orders as (
