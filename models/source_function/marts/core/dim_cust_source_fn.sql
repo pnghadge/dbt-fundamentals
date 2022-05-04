@@ -11,7 +11,7 @@ with customers as (
 
 orders as (
 
-    select * from {{ref('stg_order_source_fn')}}
+    select * from {{ref('fct_orders')}}
 
 
 ),
