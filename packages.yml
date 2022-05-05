@@ -1,5 +1,4 @@
 packages:
   - package: dbt-labs/dbt_utils
     version: 0.8.4
-  - git: https://gitlab.com/gitlab-data/snowflake_spend.git
-    revision: v1.1.0
+  
